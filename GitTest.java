@@ -1,6 +1,6 @@
 package br.com.hst.GitandJava;
 
-//Importa√ß√µes criptogr√°ficas
+//ImportaÁıes criptogr·ficas
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -56,7 +56,7 @@ public class GitTest
 }
 
 /**
- * Classe criptogr√°fica (AES)
+ * Classe criptogr·fica (AES)
  * @author vagner_lima
  *
  */
@@ -64,9 +64,9 @@ class Crypto
 {
 	
 //	Atributos:
-//	AES - Criptografia sim√©trica AES
+//	AES - Criptografia simÈtrica AES
 //	key - Chave privada de criptografia
-//	IV - Vetor de inicializa√ß√£o do AES
+//	IV - Vetor de inicializaÁ„o do AES
 	static Cipher AES;
 	static SecretKey key;
 	static IvParameterSpec IV;
@@ -99,7 +99,7 @@ class Crypto
 			AES.init(Cipher.ENCRYPT_MODE, key, IV);
 			
 			
-			//Retorna a informa√ß√£o criptografada
+			//Retorna a informaÁ„o criptografada
 			return AES.doFinal(plainText.getBytes());
 		} 
 		catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | InvalidAlgorithmParameterException | IllegalBlockSizeException |
@@ -108,7 +108,7 @@ class Crypto
 			e.printStackTrace();
 		}
 		
-		//Caso aconte√ßa alguma excess√£o, retorna o valor nulo ao m√©todo chamador
+		//Caso aconteÁa alguma excess„o, retorna o valor nulo ao mÈtodo chamador
 		return null;
 		
 	}
