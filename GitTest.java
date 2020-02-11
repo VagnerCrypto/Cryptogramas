@@ -49,7 +49,7 @@ public class GitTest
 		System.out.println();
 		System.out.println("Texto plano/claro: " + Crypto.decrypt(cipherText));
 
-		System.out.println();
+		System.out.println("FIM");
 		System.out.println();
 
 		
