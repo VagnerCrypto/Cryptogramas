@@ -49,8 +49,8 @@ public class GitTest
 		System.out.println();
 		System.out.println("Texto plano/claro: " + Crypto.decrypt(cipherText));
 
-		System.out.println();
-		System.out.println();
+		System.out.println("FIM");
+	
 
 		
 		//Finaliza o fluxo de leitura
