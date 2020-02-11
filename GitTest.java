@@ -48,8 +48,11 @@ public class GitTest
 		//Apresenta o texto plano
 		System.out.println();
 		System.out.println("Texto plano/claro: " + Crypto.decrypt(cipherText));
+
 		System.out.println();
 		System.out.println();
+
+		
 		//Finaliza o fluxo de leitura
 		in.close();
 	}
@@ -67,7 +70,7 @@ class Crypto
 //	Atributos:
 //	AES - Criptografia simétrica AES
 //	key - Chave privada de criptografia
-//	IV - Vetor de inicialização do AES
+//	IV - Vetor de inicializaÃ§Ã£o do AES
 	static Cipher AES;
 	static SecretKey key;
 	static IvParameterSpec IV;
