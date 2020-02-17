@@ -68,7 +68,7 @@ public class Hexa
 
 			if (b1 > 9) 
 				ch = (char) ('A' + (b1 - 10));
-		    else 
+			else 
 				ch = (char) ('0' + b1);
 			
 
