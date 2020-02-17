@@ -18,12 +18,12 @@ public class Hexa
 			// Pega um caractere da string
 			ch = strUp.charAt(i * 2);
 
-			// O limite é a notação hexa de A a F
+			// O limite Ã© a notaÃ§Ã£o hexa de A a F
 			if ((ch >= 'A') && (ch <= 'F')) 
 			{
 				/*
-				 * Notação ASCII No índice 0, ch vale A, e A na ASCII é 65, 65 - 65 = 0, depois
-				 * some de volta com A = 65, que na ASCII é A Transforma em bits com o AND bit a bit
+				 * NotaÃ§Ã£o ASCII No Ã­ndice 0, ch vale A, e A na ASCII Ã© 65, 65 - 65 = 0, depois
+				 * some de volta com A = 65, e por fim realiza um AND bit a bit com 0x0F = 70, bin = â€­0100 0110â€¬
 				 */
 				b1 = (byte) (((ch - 'A') + 0x0A) & 0x0F);
 			} 
@@ -86,7 +86,7 @@ public class Hexa
 		return output;
 	}
 
-	// Método para quebrar a string Hexa (Não foi tulizado, porém ele ira separar de
+	// MÃ©todo para quebrar a string Hexa (NÃ£o foi tulizado, porÃ©m ele ira separar de
 	// dois em dois caracteres a string
 	public String oneByteString(byte input)
 	{
