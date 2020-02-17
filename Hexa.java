@@ -22,10 +22,8 @@ public class Hexa
 			if ((ch >= 'A') && (ch <= 'F')) 
 			{
 				/*
-				 * Notação ASCII No índice 0, ch vale A, e A na ASCII é 65 65 - 65 = 0, depois
-				 * some de volta com A = 65, que na ASCII é A Transforma em bits com o AND bit a
-				 * bit no limite de 255 bits em bits será 0100 0001, que é 41 em hexa, 65 em
-				 * decimal e A em ASCII :)
+				 * Notação ASCII No índice 0, ch vale A, e A na ASCII é 65, 65 - 65 = 0, depois
+				 * some de volta com A = 65, que na ASCII é A Transforma em bits com o AND bit a bit
 				 */
 				b1 = (byte) (((ch - 'A') + 0x0A) & 0x0F);
 			} 
@@ -42,8 +40,8 @@ public class Hexa
 				b2 = (byte) ((ch - '0') & 0x0F);
 			
 
-			// Desloca 4 bits a esquerda, realiza um OR bit a bit e um AND bit a bit com o
-			// 255(0xFF)
+			// Desloca 4 bits a esquerda, realiza um OR bit a bit entre os arrays de bytes e um AND bit a bit com o
+			// 255(0xFF) = 1111 1111
 			output[i] = (byte) (((b1 << 4) | b2) & 0xFF);
 		}
 
