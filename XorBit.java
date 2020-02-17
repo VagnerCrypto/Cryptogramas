@@ -13,10 +13,9 @@ public class XorBit
     	
     	byte[] xorCipherArray = new byte[byteArray.length];
     	
-    	for(int i = 0; i < xorCipherArray.length; i++)
-    	{
+    	for(int i = 0; i < xorCipherArray.length; i++)    	
     		xorCipherArray[i] = (byte) ((byteArrayKey[i]) ^ byteArray[i]);
-    	}
+    	
     	
     	return xorCipherArray;
     }
