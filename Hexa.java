@@ -8,7 +8,7 @@ public class Hexa
 		String strUp = str.toUpperCase();
 
 		byte[] output = new byte[strUp.length() / 2];
-
+        
 		char ch = 0;
 		byte b1 = 0;
 		byte b2 = 0;
@@ -61,7 +61,7 @@ public class Hexa
 
 		for (int i = 0; i < input.length; i++) 
 		{
-			// Desloca os bits a direita e realiza um AND bit a bit com 255(0xFF)
+			// Desloca os bits a direita e realiza um AND bit a bit com 70(0xF)
 			b1 = (byte) ((input[i] >> 4) & 0x0F);
 
 			if (b1 > 9) 
