@@ -49,7 +49,7 @@ public class Init
 	       System.out.println("Array2");
 	       System.out.println();
 	       
-	       //Envia o array criptografado
+	       //Envia o array com os valores do XOR
 	       byte[] xArray = arrayXor.byteXor(hex, hex2);
 	       System.out.println();
 	       
